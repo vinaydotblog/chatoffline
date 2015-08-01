@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
+/* container width */
+.ofline-chat-container {
+	width: 250px;
+	box-sizing: border-box;
+	position: fixed;
+	right: 50px;
+	bottom: 0;
+	border: 1px solid #DBDBDB;
+}
+/* alignment width */
+.ofline-chat-li-width {
+	width: 148px;
+	text-align: left;
+}
+.ofline-chat-li-minimize {
+	text-align: center;
+	line-height: 10px;
+	vertical-align: middle;
+}
+
+/*--content section---*/
+.ofline-chat-section-content {
+	padding: 5px 8px;
+	background: #FFF;
+	font-size: 12px;
+	color: #666666;
+	height: 100%;
+	min-height: 100%
+}
+.ofline-chat-section-content input {
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	padding: 7px 5px;
+	margin: 5px 0;
+	width: 234px;
+	box-sizing: border-box;
+}
+.ofline-chat-section-content textarea {
+	border: 1px solid #e3e3e3;
+	width: 234px;
+	padding: 10px 5px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	box-sizing: border-box;
+	margin: 5px 0;
+	resize: none;
+}
+.chat-btn {
+	padding: 10px 8px;
+	background: #f0a055;
+	color: #FFF;
+	width: 100px !important;
+	margin: 7px auto !important;
+	display: table;
+	cursor: pointer;
+}
+.chat-btn:hover {
+	background: #d38740
+}
+
+
+/*Header - color - submenu */
+
+.ofline-chat-header {
+	background: #f0a055;
+	color: #FFF;
+	text-shadow: 0.5px 0.5px 1px #7f552e;
+	font-weight: bold;
+}
+.ofline-chat-header ul, #ofline-chat-header ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/* We apply background color and border bottom white and width to 150px */
+.ofline-chat-header ul li {
+	display: inline-block;
+	line-height: 38px;
+}
+/* We apply the background hover color when user hover the mouse over of the li component */
+.ofline-chat-header ul li:hover {
+	position: relative;
+}
+/* We apply the link style */
+.ofline-chat-header ul li a {
+	padding: 3px 6px;
+	color: #ffffff;
+	display: inline-block;
+	text-decoration: none;
+}
+/**** SECOND LEVEL MENU ****/
+/* We make the position to absolute for flyout menu and hidden the ul until the user hover the parent li item */
+.ofline-chat-header ul li ul {
+	position: absolute;
+	display: none;
+	border: 1px solid #FFF;
+}
+/* When user has hovered the li item, we show the ul list by applying display:block, note: 150px is the individual menu width.  */
+.ofline-chat-header ul li:hover ul {
+	left: 0px;
+	top: 43px;
+	display: block;
+}
+/* we apply different background color to 2nd level menu items*/
+.ofline-chat-header ul li ul li {
+	background-color: #f0a055;
+}
+/* We change the background color for the level 2 submenu when hovering the menu */
+.ofline-chat-header ul li:hover ul li:hover {
+	background-color: #d38740;
+}
+/* We style the color of level 2 links */
+.ofline-chat-header ul li ul li a {
+	color: #FFF;
+	display: inline-block;
+	width: 120px;
+}
+
+@media screen and (max-width : 480px) {
+.ofline-chat-container {
+	width: 250px;
+	box-sizing: border-box;
+	position: fixed;
+	right: 0px;
+	bottom: 0;
+	border: 1px solid #DBDBDB;
+	height: 100%;
+}
+}
+
+@media screen and (max-width : 768px) {
+.ofline-chat-container {
+	width: 250px;
+	box-sizing: border-box;
+	position: fixed;
+	right: 0px;
+	bottom: 0;
+	border: 1px solid #DBDBDB;
+	height: 100%;
+}
+}
+
